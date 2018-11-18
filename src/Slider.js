@@ -5,6 +5,9 @@ import img2 from './images/upload/5a45a3f215f2e.jpg'
 import img3 from './images/upload/5a45a3fcc0a49.jpg'
 import img4 from './images/upload/5a56ccaacf1e1.jpg'
 
+import Modal from './Modal'
+import VideoPop from './VideoPop'
+
 class Slider extends Component {
   constructor(props) {
     super(props)
@@ -16,10 +19,12 @@ class Slider extends Component {
         img4
       ],
       currentIndex: 0,
-      timeout: 4000
+      timeout: 4000,
+      videoPopupOn: false
     }
 
     this.slide = this.slide.bind(this)
+    this.toggleVideoPopup = this.toggleVideoPopup.bind(this)
   }
 
   componentDidMount() {
@@ -38,6 +43,12 @@ class Slider extends Component {
     })
 
     setTimeout(this.slide, this.state.timeout)
+  }
+
+  toggleVideoPopup() {
+    this.setState(prevState => ({
+      videoPopupOn: !prevState.videoPopupOn
+    }))
   }
 
   render() {
@@ -65,9 +76,18 @@ class Slider extends Component {
             <p className="slogan">Drive future mobility</p>
           </div>
           <div className="cnt-raw">
-            <button className="video-btn">Watch video</button>
+            <button
+              className="video-btn"
+              onClick={ this.toggleVideoPopup }>Watch video</button>
           </div>
         </div>
+
+        <Modal>
+          { this.state.videoPopupOn ? (
+            <VideoPop
+              onClose={ this.toggleVideoPopup }
+            />) : null }
+        </Modal>
       </div>
     )
   }

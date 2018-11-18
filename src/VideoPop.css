@@ -1,0 +1,24 @@
+.video-pop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  padding: 60px 30px;
+}
+
+.close-btn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pop-inner {
+  height: 100%;
+  width: 100%;
+}
