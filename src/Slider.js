@@ -62,7 +62,7 @@ class Slider extends Component {
         backgroundPosition: '50% 60%'
       }
       return (
-        <div key={ index } className={ `slide ${ index === currentIndex ? 'show' : '' }` } style={ styles }></div>
+        <div key={ index } className={ `slide${ index === currentIndex ? ' show' : '' }` } style={ styles }></div>
       )
     })
 

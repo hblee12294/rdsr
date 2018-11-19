@@ -35,7 +35,6 @@ class VideoPop extends Component {
   }
 
   render() {
-    const { isOpen } = this.props
     const opts = {
       height: '100%',
       width: '100%',
@@ -48,7 +47,7 @@ class VideoPop extends Component {
     }
 
     return (
-      <div className={ `video-pop${ isOpen ? ' open' : '' }` }>
+      <div className={ `video-pop${ this.props.isOpen ? ' open' : '' }` }>
         <div
           className="close-btn"
           onClick={ this.handleClickClose }>X</div>

@@ -11,17 +11,17 @@
 }
 
 #slider .slide {
-  height: 0;
-  width: 0;
-  opacity: .7;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
   transition: opacity 1.2s ease-in-out;
 }
 
 #slider .slide.show {
-  height: 100%;
-  width: 100%;
   opacity: 1;
-
 }
 
 #slider .content {
