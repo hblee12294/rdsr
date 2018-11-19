@@ -83,10 +83,10 @@ class Slider extends Component {
         </div>
 
         <Modal>
-          { this.state.videoPopupOn ? (
-            <VideoPop
-              onClose={ this.toggleVideoPopup }
-            />) : null }
+          <VideoPop
+            onClose={ this.toggleVideoPopup }
+            isOpen={ this.state.videoPopupOn }
+          />
         </Modal>
       </div>
     )
