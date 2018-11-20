@@ -17,7 +17,7 @@ class Header extends Component {
             <li className="menu-item"><a href="#">News</a></li>
             <li className="menu-item"><a href="#">Campus</a></li>
             <li className="menu-item"><a href="#">Contact</a></li>
-            <li className="menu-item"><a href="#">Career</a></li>
+            <li className="menu-item career"><a href="#">Career</a></li>
           </ul>
         </div>
       </header>

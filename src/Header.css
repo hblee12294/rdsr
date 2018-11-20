@@ -35,3 +35,7 @@ header {
   transition: .2s;
   text-decoration: none;
 }
+
+.menu-item a:hover {
+  color: #DF600E;
+}

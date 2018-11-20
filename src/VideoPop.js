@@ -50,7 +50,8 @@ class VideoPop extends Component {
       <div className={ `video-pop${ this.props.isOpen ? ' open' : '' }` }>
         <div
           className="close-btn"
-          onClick={ this.handleClickClose }>X</div>
+          onClick={ this.handleClickClose }
+        />
         <div className="pop-inner">
           <YouTube
             videoId={ videoId }

@@ -20,10 +20,35 @@
   position: fixed;
   top: 20px;
   right: 30px;
-  color: #fff;
-  font-size: 2rem;
-  font-weight: bold;
+  height: 2rem;
+  width: 2rem;
   cursor: pointer;
+}
+
+.close-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 3px;
+  width: 80%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #fff;
+}
+
+.close-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 3px;
+  width: 80%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: #fff;
+}
+
+.close-btn:hover::after, .close-btn:hover::before {
+  background-color: #aaa;  
 }
 
 .pop-inner {
