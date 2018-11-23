@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import './App.css'
 
-import Header from './Header'
-import Slider from './Slider'
+import Header from './Component/Header'
+import Slider from './Component/Slider'
+import About from './About'
+import Footer from './Component/Footer'
 
 class App extends Component {
 
@@ -10,8 +12,10 @@ class App extends Component {
     return (
       <div className="App">
         <Slider />
-        <Header />
+        <About />
+        <Footer />
 
+        <Header />
       </div>
     )
   }

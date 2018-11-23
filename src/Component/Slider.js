@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import './Slider.css'
-import img1 from './images/upload/5a45a3ceea8ac.jpg'
-import img2 from './images/upload/5a45a3f215f2e.jpg'
-import img3 from './images/upload/5a45a3fcc0a49.jpg'
-import img4 from './images/upload/5a56ccaacf1e1.jpg'
+import img1 from '../images/upload/5a45a3ceea8ac.jpg'
+import img2 from '../images/upload/5a45a3f215f2e.jpg'
+import img3 from '../images/upload/5a45a3fcc0a49.jpg'
+import img4 from '../images/upload/5a56ccaacf1e1.jpg'
 
 import Modal from './Modal'
 import VideoPop from './VideoPop'
