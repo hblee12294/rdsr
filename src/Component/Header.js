@@ -11,14 +11,16 @@ class Header extends Component {
           <a href="#" className="logo">
             <img id="header-logo" src={ logo } alt="logo-white"/>
           </a>
-          <ul className="menu">
-            <li className="menu-item"><a href="#">Home</a></li>
-            <li className="menu-item"><a href="#">About</a></li>
-            <li className="menu-item"><a href="#">News</a></li>
-            <li className="menu-item"><a href="#">Campus</a></li>
-            <li className="menu-item"><a href="#">Contact</a></li>
-            <li className="menu-item career"><a href="#">Career</a></li>
-          </ul>
+          <nav>
+            <ul className="menu">
+              <li className="menu-item"><a href="#">Home</a></li>
+              <li className="menu-item"><a href="#">About</a></li>
+              <li className="menu-item"><a href="#">News</a></li>
+              <li className="menu-item"><a href="#">Campus</a></li>
+              <li className="menu-item"><a href="#">Contact</a></li>
+              <li className="menu-item career"><a href="#">Career</a></li>
+            </ul>
+          </nav>
         </div>
       </header>
     )

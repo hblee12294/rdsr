@@ -15,20 +15,31 @@ header {
 
 #header-logo {
   height: 1.5rem;
+  margin: 2rem 0;
   user-select: none;
 }
 
+nav {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-60%);
+}
+
 .menu {
+  display: flex;
+  flex-direction: column;
   margin: 0;
 }
 
 .menu-item {
-  display: inline-block;
+  /* display: inline-block; */
+  list-style: none;
 }
 
 .menu-item a {
   display: inline-block;
-  padding: 25px 25px;
+  padding: 20px 25px;
   color: #fff;
   font-weight: bold;
   font-size: 1.2rem;

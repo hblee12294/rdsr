@@ -3,7 +3,7 @@ import './App.css'
 
 import Header from './Component/Header'
 import Slider from './Component/Slider'
-import About from './About'
+import About from './Component/About'
 import Footer from './Component/Footer'
 
 class App extends Component {

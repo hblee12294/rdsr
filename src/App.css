@@ -1,1 +1,14 @@
+section {
+  color: #ddd;
+  background-color: #1b1b1b;
+  padding: 2rem 0;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
+
+.section-inner {
+  width: 78%;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
