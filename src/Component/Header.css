@@ -3,6 +3,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  background-color: #1b1b1b;
 }
 
 .header-wrap {
@@ -19,22 +20,12 @@ header {
   user-select: none;
 }
 
-nav {
-  position: fixed;
-  top: 50%;
-  right: 0;
-  transform: translateY(-60%);
-}
-
 .menu {
-  display: flex;
-  flex-direction: column;
   margin: 0;
 }
 
 .menu-item {
-  /* display: inline-block; */
-  list-style: none;
+  display: inline-block;
 }
 
 .menu-item a {
