@@ -4,6 +4,7 @@ import './App.css'
 import Header from './Component/Header'
 import Slider from './Component/Slider'
 import About from './Component/About'
+import Technology from './Component/Technology'
 import Footer from './Component/Footer'
 
 class App extends Component {
@@ -13,8 +14,9 @@ class App extends Component {
       <div className="App">
         <Slider />
         <About />
-        <Footer />
+        <Technology />
 
+        <Footer />
         <Header />
       </div>
     )
