@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        <h3>Roadstar.ai</h3>
+        <h4 className="footer-title">Roadstar.ai @ 2018</h4>
       </footer>
     )
   }

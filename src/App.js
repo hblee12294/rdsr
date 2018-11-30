@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import './App.css'
 
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
+
+import Home from './Home/Home'
 import Header from './Component/Header'
 import Slider from './Component/Slider'
 import About from './Component/About'
@@ -12,12 +15,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Slider />
-        <About />
-        <Technology />
+        <Router>
+          <div>
+            <Route path="/" component={ Home } />
+            <Route path="/about" component={ About } />
+
+            <Header />
+          </div>
+        </Router>
 
         <Footer />
-        <Header />
       </div>
     )
   }

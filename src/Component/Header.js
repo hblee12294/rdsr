@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import './Header.css'
+
+import { NavLink, Link } from 'react-router-dom'
+
 import logo from '../images/logo2.png'
 
 class Header extends Component {
@@ -8,17 +11,21 @@ class Header extends Component {
     return (
       <header>
         <div className="header-wrap">
-          <a href="#" className="logo">
+          <Link to="/" className="logo">
             <img id="header-logo" src={ logo } alt="logo-white"/>
-          </a>
+          </Link>
+
           <nav>
             <ul className="menu">
-              <li className="menu-item"><a href="#">Home</a></li>
-              <li className="menu-item"><a href="#">About</a></li>
-              <li className="menu-item"><a href="#">News</a></li>
-              <li className="menu-item"><a href="#">Campus</a></li>
-              <li className="menu-item"><a href="#">Contact</a></li>
-              <li className="menu-item career"><a href="#">Career</a></li>
+              <li className="menu-item">
+                <NavLink to="/about">About</NavLink>
+              </li>
+              <li className="menu-item">
+                <NavLink to="/news">News</NavLink>
+              </li>
+              <li className="menu-item">
+                <NavLink to="/campus">Campus</NavLink>
+              </li>
             </ul>
           </nav>
         </div>
